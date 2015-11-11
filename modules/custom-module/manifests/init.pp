@@ -6,11 +6,6 @@
 
 class custom-module {
 
-  # Install git 1.9 EPEL package
-  package { "git19":
-    ensure => latest,
-  }
-
   package { "dos2unix":
     ensure => latest,
   }
@@ -19,17 +14,17 @@ class custom-module {
     ensure => latest,
   }
 
+  $my_prop = hiera('my_property', 'default value')
+  $secure_prop = hiera('secure_property', 'no value provided for secure_property')
+
   # Create a profile script to set git19 as the default
-  file { "/etc/profile.d/git.sh":
+  file { "/tmp/sample.txt":
     ensure => file,
-    content => template("custom-module/git.sh.erb"),
-    mode => '0755',
+    content => template("custom-module/sample.txt.erb"),
+    mode => '0644',
     owner => "root",
     group => "root", 
   }
-
-  $my_prop = hiera('my_property', 'default value')
-  $secure_prop = hiera('secure_property', 'no value provided for secure_property')
   
 }
 
