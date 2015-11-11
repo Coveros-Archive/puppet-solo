@@ -1,0 +1,8 @@
+#
+# Hiera values for environment specific values
+# 
+# To edit the encrypted values:
+# sudo eyaml edit --pkcs7-private-key=/etc/puppet/secure/keys/private_key.pkcs7.pem --pkcs7-public-key=/etc/puppet/secure/keys/public_key.pkcs7.pem  hiera/production.yaml
+# 
+
+my_property: 'development environment value'

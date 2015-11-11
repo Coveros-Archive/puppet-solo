@@ -8,13 +8,13 @@
 
 # These will be used when we start encrypting properties
 :eyaml:
-  :datadir: /opt/software/puppet-modules
+  :datadir: /opt/software/puppet-modules/puppet-solo/hiera
   :pkcs7_private_key: "/etc/puppet/secure/keys/private_key.pkcs7.pem"
   :pkcs7_public_key: "/etc/puppet/secure/keys/public_key.pkcs7.pem"
   :extension: 'yaml'
  
 :yaml:
-  :datadir: "/opt/software/puppet-modules"
+  :datadir: "/opt/software/puppet-modules/puppet-solo/hiera"
  
 :hierarchy:
   - defaults
