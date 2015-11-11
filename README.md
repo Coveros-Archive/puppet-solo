@@ -1,12 +1,12 @@
 
 This a set of puppet scripts that are intended to be self-contained within a single Git
-repositories. It has a few basic requirements, then allows you to write puppet modules
+repository. It has a few basic requirements, then allows you to write puppet modules
 and manifests to install/configure other things.
 
 There are three basic steps to make this work.
-    1. Install basic pre-requisites
-	2. Run the 'puppet' installation manifests to install the rest of stuff we need
-	3. Run the custom modules that we actually want to work
+1. Install basic pre-requisites
+2. Run the 'puppet' installation manifests to install the rest of stuff we need
+3. Run the custom modules that we actually want to work
 
 Pre-requisites. You need a few things first.
 * Git
